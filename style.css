@@ -1,0 +1,95 @@
+h2{
+    text-align: center;
+}
+.gnav__ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gnav__li:first-child{
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.gnav__li{
+    float:left;
+}
+.gnav__a{
+    display: block;
+    text-align: center;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    color: #000;
+}
+.heading{
+    position: relative;
+    width: 100%;
+}
+.heading__img{
+    width: 100%;
+}
+.heading__sentence{
+    position :absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.chapter__bisection{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.chapter__bisection-img{
+    width: 49%;
+    margin-right: auto;
+}
+.chapter__bisection-sentence{
+    width: 49%;
+    margin-left: auto;
+}
+.course__ul{
+    list-style-type: none;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.course__li{
+    width: 100%;
+    margin: 0 2% 0 auto;
+}
+.course__img{
+    width: 100%;
+}
+.contact__input-email{
+    display: block;
+    margin: auto;
+}
+.contact{
+    text-align: center;
+}
+.contact__input-email{
+    padding: 1.5ex;
+    width: 50%;
+    border-radius: 3ex;
+    border: thin solid #999;
+}
+.contact__btn{
+    background-color: #F88;
+    border-radius: 0.5ex;
+    border: none;
+    padding: 2ex 4em;
+    margin-top: 2ex;
+    color: #fff;
+    font-weight: bold;
+}
