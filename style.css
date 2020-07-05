@@ -78,3 +78,29 @@ h1{
     width:auto;
     color:#000;
 }
+.greeting {
+    position: relative;
+    margin: 1em auto;
+    padding: 1em;
+    width: 40em;
+    height: auto;
+    background: #fff;
+    border-radius: 2px;
+}
+.greeting::after{
+    content: '';
+    position: absolute;
+    bottom: 2ex;
+    width: 60%;
+    height: 5%;
+    box-shadow: 0 1ex 1ex rgba(0,0,0,.4);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    right: 0;
+    transform: skew(5deg) rotate(5deg);
+}
+.greeting:hover::after{
+    height:7%;
+    box-shadow:.5em 2ex 1ex rgba(0,0,0,.7);
+    right: .5em;
+}
