@@ -1,4 +1,7 @@
 @charset "utf-8";
+/* html{ */
+    /* scroll-behavior:smooth; */
+/* } */
 body{
     background:#ddd;
     color:#222;
@@ -31,6 +34,9 @@ footer{
 small{
     font-size:80%;
     text-align:center;
+}
+.textright{
+    float:right;
 }
 .gnav__ul{
     width:100%;
@@ -81,7 +87,7 @@ h1{
 .greeting {
     position: relative;
     margin: 1em auto;
-    padding: 1em;
+    padding: 3ex 1em;
     width: 40em;
     height: auto;
     background: #fff;
@@ -90,17 +96,23 @@ h1{
 .greeting::after{
     content: '';
     position: absolute;
-    bottom: 2ex;
-    width: 60%;
-    height: 5%;
+    bottom: 5%;
+    width: 80%;
+    height: 90%;
     box-shadow: 0 1ex 1ex rgba(0,0,0,.4);
     z-index: -1;
     transition: all .3s ease-in-out;
     right: 0;
-    transform: skew(5deg) rotate(5deg);
+    transform: skew(2deg) rotate(2deg);
 }
 .greeting:hover::after{
-    height:7%;
     box-shadow:.5em 2ex 1ex rgba(0,0,0,.7);
     right: .5em;
+}
+.greeting__h2{
+    text-align:center;
+    padding-bottom:2ex;
+}
+.greeting__p{
+    margin:.5ex 0;
 }
