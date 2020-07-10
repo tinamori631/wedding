@@ -85,23 +85,30 @@ h1{
     color:#000;
 }
 .greeting {
-    position: relative;
-    margin: 1em auto;
-    padding: 3ex 1em;
-    width: 40em;
-    height: auto;
-    background: #fff;
-    border-radius: 2px;
+    position:relative;
+    margin:2em auto;
+    padding:3ex 1em;
+    width:min(40em,80vw);
+    height:auto;
+    background:#fff;
+    border-radius:2px;
 }
+.greeting::before,
 .greeting::after{
     content: '';
     position: absolute;
-    bottom: 5%;
     width: 80%;
     height: 90%;
-    box-shadow: 0 1ex 1ex rgba(0,0,0,.4);
+    bottom: 5%;
     z-index: -1;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 1ex 1ex rgba(0,0,0,.4);
+}
+.greeting::before{
+    left: 0;
+    transform: skew(-2deg) rotate(-2deg);
+}
+.greeting::after{
     right: 0;
     transform: skew(2deg) rotate(2deg);
 }
@@ -115,4 +122,26 @@ h1{
 }
 .greeting__p{
     margin:.5ex 0;
+}
+.timetable{
+    margin: 2em auto;
+}
+.tticon{
+    background-size:contain;
+    background-position:left center;
+    background-repeat:no-repeat;
+    padding-left:4ex;
+    height:4ex;
+}
+.reception{
+    background-image:url(tticon-reception.png);
+}
+.ceremony{
+    background-image:url(tticon-ceremony.png);
+}
+.banquet{
+    background-image:url(tticon-banquet.png);
+}
+.seeing-off{
+    background-image:url(tticon-seeing-off.png);
 }
