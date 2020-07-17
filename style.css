@@ -1,11 +1,11 @@
 @charset "utf-8";
-/* html{ */
-    /* scroll-behavior:smooth; */
-/* } */
 body{
     background:#ddd;
     color:#222;
     font-family:"Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+}
+main{
+    padding:0 .5em;
 }
 p,li,dt,dl{
     line-height:1.6;
@@ -38,10 +38,12 @@ small{
 .textright{
     float:right;
 }
+.textcenter{
+    text-align:center;
+}
 .gnav__ul{
     width:100%;
     display:flex;
-    list-style-type:none;
 }
 .gnav__li{
     width:calc(25%-2px);
@@ -60,6 +62,7 @@ small{
     color:#222;
     text-decoration:none;
     display:block;
+    transition:background-color .4s ease-in-out;
 }
 .gnav__a:link{
     color:#222;
@@ -72,7 +75,6 @@ small{
     display:block;
 }
 .gnav__a:hover{
-    background-color:#dadada;
     background-color:#fff;
 }
 h1{
@@ -86,10 +88,10 @@ h1{
 }
 .greeting {
     position:relative;
-    margin:2em auto;
-    padding:3ex 1em;
-    width:min(40em,80vw);
+    margin:1em auto;
+    padding:3ex 2em 1ex;
     height:auto;
+    width:min(40em,80vw);
     background:#fff;
     border-radius:2px;
 }
@@ -102,7 +104,7 @@ h1{
     bottom: 5%;
     z-index: -1;
     transition: all .4s ease-in-out;
-    box-shadow: 0 1ex 1ex rgba(0,0,0,.4);
+    box-shadow: 0 3ex 1ex rgba(0,0,0,.4);
 }
 .greeting::before{
     left: 0;
@@ -112,8 +114,9 @@ h1{
     right: 0;
     transform: skew(2deg) rotate(2deg);
 }
+.greeting:hover::after,
 .greeting:hover::after{
-    box-shadow:.5em 2ex 1ex rgba(0,0,0,.7);
+    box-shadow:.5em 4ex 1ex rgba(0,0,0,.7);
     right: .5em;
 }
 .greeting__h2{
@@ -122,6 +125,7 @@ h1{
 }
 .greeting__p{
     margin:.5ex 0;
+    text-align:center;
 }
 .timetable{
     margin: 2em auto;
@@ -144,4 +148,26 @@ h1{
 }
 .seeing-off{
     background-image:url(tticon-seeing-off.png);
+}
+.greeting__basic-information{
+    text-align:center;
+    margin-top:5ex;
+}
+.greeting__basic-dl{
+    display:inline-block;
+    text-align:left;
+}
+.greeting__basic-title{
+    width:4em;
+    float:left;
+}
+.greeting__basic-title::after{
+    content:":";
+}
+.greeting__basic-description{
+    margin-left:3.5em;
+    margin-bottom:1ex;
+}
+.greeting__detail-schedule{
+    padding-left:1em;
 }
