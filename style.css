@@ -41,6 +41,9 @@ small{
 .textcenter{
     text-align:center;
 }
+.aks{
+    display:inline-block;
+}
 .gnav__ul{
     width:100%;
     display:flex;
