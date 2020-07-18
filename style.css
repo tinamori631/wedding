@@ -178,7 +178,7 @@ h1{
     margin:1em 2em;
 }
 .access__map{
-
+    width:min(100vw,40em);
 }
 .access__description{
     list-style:square;
