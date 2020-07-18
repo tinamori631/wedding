@@ -174,3 +174,14 @@ h1{
 .greeting__detail-schedule{
     padding-left:1em;
 }
+.access{
+    margin:1em 2em;
+}
+.access__map{
+
+}
+.access__description{
+    list-style:square;
+    margin-left:2em;
+    margin-bottom:2ex;
+}
