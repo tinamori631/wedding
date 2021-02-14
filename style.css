@@ -131,28 +131,6 @@ h1{
     margin:.5ex 0;
     text-align:center;
 }
-.timetable{
-    margin: 2em auto;
-}
-.tticon{
-    background-size:contain;
-    background-position:left center;
-    background-repeat:no-repeat;
-    padding-left:4ex;
-    height:4ex;
-}
-.reception{
-    background-image:url(tticon-reception.png);
-}
-.ceremony{
-    background-image:url(tticon-ceremony.png);
-}
-.banquet{
-    background-image:url(tticon-banquet.png);
-}
-.seeing-off{
-    background-image:url(tticon-seeing-off.png);
-}
 .greeting__basic-information{
     text-align:center;
     margin-top:5ex;
