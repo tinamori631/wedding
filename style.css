@@ -30,6 +30,7 @@ header{
 footer{
     background-color:#ccc;
     padding:1em;
+    text-align:center;
 }
 small{
     font-size:80%;
@@ -161,15 +162,20 @@ h1{
     text-align:left;
 }
 .greeting__basic-title{
-    width:4em;
+    width:3em;
     float:left;
 }
-.greeting__basic-title::after{
+.greeting__basic-title::after,
+.greeting__detail-title::after{
     content:":";
 }
 .greeting__basic-description{
     margin-left:3.5em;
     margin-bottom:1ex;
+}
+.greeting__detail-title{
+    width:6em;
+    float:left;
 }
 .greeting__detail-schedule{
     padding-left:1em;
@@ -197,4 +203,19 @@ h1{
 }
 .access__dd{
     display:block;
+}
+.COVID19__staffsmeasure,
+.COVID19__guestsmeasure{
+    margin-top: -2ex;
+    margin-bottom: 2ex;
+}
+.COVID19__staffsmeasure li,
+.COVID19__guestsmeasure li{
+    padding-left: 1.5em;
+}
+.COVID19__staffsmeasure li::before,
+.COVID19__guestsmeasure li::before{
+    content: "☑";
+    position: absolute;
+    left: 1em;
 }
